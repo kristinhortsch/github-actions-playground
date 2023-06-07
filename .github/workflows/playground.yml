@@ -1,0 +1,15 @@
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  check_for_updated_json:
+    runs-on: ubuntu-latest
+    name: Check for sample.json updates
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Hello
+        run: echo Hello
+        shell: bash
